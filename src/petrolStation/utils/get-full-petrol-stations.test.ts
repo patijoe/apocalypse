@@ -3,7 +3,7 @@ import { requiredBottles } from "./mocks/required-bottles.mock";
 import { getFullPetrolStations } from "./index";
 
 describe("calculateBottles function", () => {
-  test("should generate an array with the quantity of bottles of each capacity", () => {
+  test("should add a new property totalPrice per petrol station", () => {
     const fullPetrolStations = getFullPetrolStations(
       petrolStations,
       requiredBottles
