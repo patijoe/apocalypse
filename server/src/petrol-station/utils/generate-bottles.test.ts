@@ -5,8 +5,6 @@ describe("generateBottles function", () => {
   test("should generate an array with prices inside an interval", () => {
     const newBottles = generateBottles();
 
-    console.log("---newBottles", newBottles);
-
     getExpectedBottlePrice(newBottles, 3.5, 4, 0);
     getExpectedBottlePrice(newBottles, 9, 10.5, 1);
     getExpectedBottlePrice(newBottles, 14, 15, 2);
