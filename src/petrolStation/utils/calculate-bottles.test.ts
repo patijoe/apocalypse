@@ -1,4 +1,4 @@
-import { petrolStations } from "./mocks/petrol-stations.mock";
+import { petrolStations } from "../mocks/petrol-stations.mock";
 import { calculateBottles } from "./index";
 
 describe("calculateBottles function", () => {

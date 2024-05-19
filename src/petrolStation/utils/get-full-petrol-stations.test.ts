@@ -1,5 +1,5 @@
-import { petrolStations } from "./mocks/petrol-stations.mock";
-import { requiredBottles } from "./mocks/required-bottles.mock";
+import { petrolStations } from "../mocks/petrol-stations.mock";
+import { requiredBottles } from "../mocks/required-bottles.mock";
 import { getFullPetrolStations } from "./index";
 
 describe("calculateBottles function", () => {

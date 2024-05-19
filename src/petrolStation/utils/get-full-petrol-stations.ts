@@ -21,7 +21,7 @@ export const getFullPetrolStations = (
       totalPrice = totalPrice + bottleResult;
     });
 
-    const newStation = { ...station, totalPrice: totalPrice };
+    const newStation = { ...station, totalPrice };
     return newStation;
   });
 };
