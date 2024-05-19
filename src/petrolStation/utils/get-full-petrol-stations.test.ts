@@ -9,12 +9,15 @@ describe("calculateBottles function", () => {
       requiredBottles
     );
 
-    const newPetrolStations = [...petrolStations];
-    newPetrolStations[0].totalPrice = 90.84;
-    newPetrolStations[1].totalPrice = 89.74;
+    const prices = [90.84, 89.74];
+
+    const petrolStationsMock = petrolStations.map((station, i) => ({
+      ...station,
+      totalPrice: prices[i],
+    }));
 
     expect(fullPetrolStations).toEqual(
-      expect.arrayContaining(newPetrolStations)
+      expect.arrayContaining(petrolStationsMock)
     );
   });
 });
