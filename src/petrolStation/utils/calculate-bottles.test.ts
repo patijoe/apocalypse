@@ -10,9 +10,8 @@ describe("calculateBottles function", () => {
       { capacity: 3, quantity: 0 },
       { capacity: 1, quantity: 0 },
     ]);
-
     const requiredBottles_02 = calculateBottles(98, petrolStations);
-    expect(requiredBottles_02).toMatchSnapshot([
+    expect(requiredBottles_02).toEqual([
       { capacity: 15, quantity: 6 },
       { capacity: 5, quantity: 1 },
       { capacity: 3, quantity: 1 },

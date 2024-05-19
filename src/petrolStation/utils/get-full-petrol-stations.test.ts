@@ -16,8 +16,6 @@ describe("calculateBottles function", () => {
       totalPrice: prices[i],
     }));
 
-    expect(fullPetrolStations).toEqual(
-      expect.arrayContaining(petrolStationsMock)
-    );
+    expect(fullPetrolStations).toEqual(petrolStationsMock);
   });
 });

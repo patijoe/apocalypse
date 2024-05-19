@@ -20,7 +20,7 @@ const PetrolStationPage = ({ petrolStations }: PetrolStationTableProps) => {
     <>
       <p>{TEXT.INPUT_SEARCH_DESCRIPTION}</p>
       <input
-        id="search"
+        data-testid="searchInput"
         name="search"
         onChange={handleLitersValue}
         placeholder={TEXT.INPUT_SEARCH_PLACEHOLDER}

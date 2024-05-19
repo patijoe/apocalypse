@@ -31,7 +31,7 @@ const PetrolStationTable = ({
     });
 
   return (
-    <table>
+    <table data-testid="resultTable">
       <caption>{TEXT.PETROL_STATION_TABLE_CAPTION}</caption>
       <tbody>
         <tr>
