@@ -19,6 +19,7 @@ const useCalculateBottles = (petrolStations: PetrolStation[]) => {
     );
     setRequiredBottles(bottlesNedeed);
   }, [requiredLiters, petrolStations]);
+
   return {
     requiredBottles,
     requiredLiters,
