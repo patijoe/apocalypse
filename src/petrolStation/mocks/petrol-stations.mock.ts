@@ -1,4 +1,4 @@
-export const petrolStations = [
+export const petrolStationsMock = [
   {
     id: 1,
     name: "petrol_01",

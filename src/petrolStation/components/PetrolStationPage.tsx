@@ -5,17 +5,14 @@ import { TEXT } from "../utils/constants";
 import { useCalculateBottles } from "../hooks/useCalculateBottles";
 import { PetrolStationResult } from "./PetrolStationResult";
 
-interface PetrolStationTableProps {
-  petrolStations: PetrolStation[];
-}
-
-const PetrolStationPage = ({ petrolStations }: PetrolStationTableProps) => {
+const PetrolStationPage = () => {
   const {
     requiredBottles,
     requiredLiters,
     handleLitersValue,
     handleCalculateBottles,
-  } = useCalculateBottles(petrolStations);
+    petrolStations,
+  } = useCalculateBottles();
 
   return (
     <MainContainer>
@@ -41,6 +38,9 @@ const PetrolStationPage = ({ petrolStations }: PetrolStationTableProps) => {
           petrolStations={petrolStations}
         />
       )}
+      <FooterContainer>
+        <FooterText>Made with &#10084;&#65039;</FooterText>
+      </FooterContainer>
     </MainContainer>
   );
 };
@@ -54,7 +54,6 @@ const MainContainer = styled.div`
   font-size: 18px;
   margin: 50px;
   padding: 30px;
-  height: 100vh;
 
   @media (max-width: 550px) {
     font-size: 12px;
@@ -81,7 +80,7 @@ const Description = styled.div`
 const InputContainer = styled.div`
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 0 20px 0;
   width: 80%;
 
@@ -95,10 +94,14 @@ const Input = styled.input`
   border: 1px solid grey;
   border-radius: 5px;
   height: 20px;
+  margin-right: 30px;
+  max-width: 300px;
+  padding-left: 5px;
   width: 70%;
 
   @media (max-width: 550px) {
     margin-bottom: 8px;
+    margin-right: 0;
     width: 80%;
   }
 `;
@@ -113,4 +116,16 @@ const Button = styled.button`
     font-size: 12px;
     width: 35%;
   }
+`;
+
+const FooterContainer = styled.div`
+  border-top: 1px solid pink;
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+  background-color: white;
+`;
+
+const FooterText = styled.p`
+  font-size: 12px;
 `;

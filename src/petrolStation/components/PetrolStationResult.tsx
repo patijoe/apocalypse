@@ -14,7 +14,7 @@ const PetrolStationResult = ({
   petrolStations,
 }: PetrolStationResultProps) => {
   return (
-    <ResultContainer petrolStations={petrolStations}>
+    <ResultContainer>
       <Description>
         <Text>{TEXT.CAPACITY_RESULT}</Text>
       </Description>
@@ -41,7 +41,7 @@ const PetrolStationResult = ({
 
 export { PetrolStationResult };
 
-const ResultContainer = styled.div<{ petrolStations: PetrolStation[] }>`
+const ResultContainer = styled.div`
   align-items: center;
   border: 2px solid pink;
   border-radius: 10px;
@@ -50,7 +50,6 @@ const ResultContainer = styled.div<{ petrolStations: PetrolStation[] }>`
   height: auto;
   margin: 0 0 10px;
   padding: 30px;
-  width: 70%;
 `;
 
 const Description = styled.div`
