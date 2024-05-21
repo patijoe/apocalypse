@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Cities pollution
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-react.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Times are hard, the apocalypse is coming. Petrol stations are closed and just
+allow customers to buy petrol bottles via Internet. You should buy only the number of liters you need, otherwise you run the risk of having all the merchandise stolen.
 
-## Available Scripts
+This project shows the response of an express server, which consists of the different petrol stations available with their selling prices according to the different capacities of the bottles.
 
-In the project directory, you can run:
+This project shows the response of an express server, which consists of the different gas stations available with their selling prices according to the different capacities of the drums. But don't waste time because the prices fluctuate fast, exactly every 30 seconds.
 
-### `npm start`
+Good luck and may the force be with you!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Server API
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The API has been made using Node.JS, express and typescript.
 
-### `npm test`
+## Install
+To install the server, do `npm install`, from the server folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Start
+To start the server, from the server folder, `npm start`.
+The server will be running at [http://localhost:3001](http://localhost:3001).
 
-### `npm run build`
+## Test
+ To launch the tests, from the server folder of the project, `npm test`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Front
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project started with Create React App and typescript.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Install
+To install the front, do `npm install`, from the root folder.
 
-### `npm run eject`
+## Start
+To start the application, from the root of the project, `npm start`.
+To display in the browser, open [http://localhost:3000](http://localhost:3000).
+The page is refreshed when you make changes to the code.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Test
+ To launch the tests, from the root of the project, `npm test`.
